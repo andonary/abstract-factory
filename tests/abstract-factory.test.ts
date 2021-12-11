@@ -4,7 +4,7 @@ import {Max} from "../src/pattern/factory/max";
 
 
 describe('Advance Wars - Abstract factory', () => {
-    test('it should allow Andy to create an infantry at 100 power', async () => {
+    test('it should allow Andy to create an infantry at 100 power and 100 defense', async () => {
         // Arrange
         const andy: CO = new Andy();
 
@@ -12,11 +12,11 @@ describe('Advance Wars - Abstract factory', () => {
         const infantry = andy.makeInfantry();
 
         // Assert
-        expect(infantry).toBeDefined();
         expect(infantry.power).toEqual(100);
+        expect(infantry.defense).toEqual(100);
     });
 
-    test('it should allow Max to create an infantry at 110 power', async () => {
+    test('it should allow Max to create an infantry at 110 power and 90 defense', async () => {
         // Arrange
         const max: CO = new Max();
 
@@ -24,7 +24,7 @@ describe('Advance Wars - Abstract factory', () => {
         const infantry = max.makeInfantry();
 
         // Assert
-        expect(infantry).toBeDefined();
         expect(infantry.power).toEqual(110);
+        expect(infantry.defense).toEqual(90);
     });
 });
