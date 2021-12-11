@@ -1,0 +1,29 @@
+{
+  "name": "abstract-factory",
+  "version": "1.0.0",
+  "description": "example of design pattern called abstract factory in typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andonary/abstract-factory.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andonary/abstract-factory/issues"
+  },
+  "homepage": "https://github.com/andonary/abstract-factory#readme",
+  "dependencies": {
+    "typescript": "^4.5.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "@types/node": "^16.11.12",
+    "jest": "^27.4.4",
+    "ts-jest": "^27.1.1",
+    "ts-node": "^10.4.0"
+  }
+}
